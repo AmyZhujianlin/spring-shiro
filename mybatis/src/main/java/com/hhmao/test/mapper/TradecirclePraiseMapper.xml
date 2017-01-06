@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hhmao.test.dao.TradecirclePraiseMapper" >
+  <resultMap id="BaseResultMap" type="com.hhmao.test.entity.TradecirclePraise" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="date_created" property="dateCreated" jdbcType="TIMESTAMP" />
+    <result column="tradecircle_id" property="tradecircleId" jdbcType="VARCHAR" />
+    <result column="member_id" property="memberId" jdbcType="VARCHAR" />
+    <result column="praise_name" property="praiseName" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, date_created, tradecircle_id, member_id, praise_name
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from tradecircle_praise
+    where id = #{id,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from tradecircle_praise
+    where id = #{id,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.hhmao.test.entity.TradecirclePraise" >
+    insert into tradecircle_praise (id, date_created, tradecircle_id, 
+      member_id, praise_name)
+    values (#{id,jdbcType=VARCHAR}, #{dateCreated,jdbcType=TIMESTAMP}, #{tradecircleId,jdbcType=VARCHAR}, 
+      #{memberId,jdbcType=VARCHAR}, #{praiseName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.hhmao.test.entity.TradecirclePraise" >
+    insert into tradecircle_praise
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="dateCreated != null" >
+        date_created,
+      </if>
+      <if test="tradecircleId != null" >
+        tradecircle_id,
+      </if>
+      <if test="memberId != null" >
+        member_id,
+      </if>
+      <if test="praiseName != null" >
+        praise_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="dateCreated != null" >
+        #{dateCreated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="tradecircleId != null" >
+        #{tradecircleId,jdbcType=VARCHAR},
+      </if>
+      <if test="memberId != null" >
+        #{memberId,jdbcType=VARCHAR},
+      </if>
+      <if test="praiseName != null" >
+        #{praiseName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.hhmao.test.entity.TradecirclePraise" >
+    update tradecircle_praise
+    <set >
+      <if test="dateCreated != null" >
+        date_created = #{dateCreated,jdbcType=TIMESTAMP},
+      </if>
+      <if test="tradecircleId != null" >
+        tradecircle_id = #{tradecircleId,jdbcType=VARCHAR},
+      </if>
+      <if test="memberId != null" >
+        member_id = #{memberId,jdbcType=VARCHAR},
+      </if>
+      <if test="praiseName != null" >
+        praise_name = #{praiseName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.hhmao.test.entity.TradecirclePraise" >
+    update tradecircle_praise
+    set date_created = #{dateCreated,jdbcType=TIMESTAMP},
+      tradecircle_id = #{tradecircleId,jdbcType=VARCHAR},
+      member_id = #{memberId,jdbcType=VARCHAR},
+      praise_name = #{praiseName,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=VARCHAR}
+  </update>
+</mapper>

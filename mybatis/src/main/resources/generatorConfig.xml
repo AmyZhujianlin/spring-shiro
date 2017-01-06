@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+ <!-- 数据库驱动包位置 -->  
+    <classPathEntry  
+        location="D:\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar" />  
+  <context id="context1" >
+  <commentGenerator>  
+            <!-- 是否去除自动生成的注释 true：是 ： false:否 -->  
+            <property name="suppressAllComments" value="true"/>  
+        </commentGenerator> 
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.10.180:3306/hhmao" 
+    userId="myte" password="123456" />
+    <javaModelGenerator targetPackage="com.hhmao.test.entity" targetProject="mybatis\src\main\java" />  
+    <sqlMapGenerator targetPackage="com.hhmao.test.mapper" targetProject="mybatis\src\main\java" ></sqlMapGenerator>  
+    <javaClientGenerator targetPackage="com.hhmao.test.dao" targetProject="mybatis\src\main\java" type="XMLMAPPER" />  
+    <!-- 
+    <table schema="" tableName="entrustpurchase" domainObjectName="Entrustpurchase" enableCountByExample="true" enableUpdateByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table>
+    <table schema="" tableName="friends" domainObjectName="Friends" enableCountByExample="true" enableUpdateByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table>
+    <table schema="" tableName="logistics" domainObjectName="Logistics" enableCountByExample="true" enableUpdateByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table>
+    <table schema="" tableName="member" domainObjectName="Member" enableCountByExample="true" enableUpdateByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table>
+    <table schema="" tableName="product" domainObjectName="Product" enableCountByExample="true" enableUpdateByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table>
+    <table schema="" tableName="tradecircle" domainObjectName="Tradecircle" enableCountByExample="true" enableUpdateByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table>
+    <table schema="" tableName="chat_logger" domainObjectName="ChatLogger" enableCountByExample="true" enableUpdateByExample="true"  
+            enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table> 
+     -->
+    <table schema="" tableName="tradecircle_commonts" domainObjectName="TradecircleCommonts" enableCountByExample="false" enableUpdateByExample="false"  
+            enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+    <table schema="" tableName="tradecircle_praise" domainObjectName="TradecirclePraise" enableCountByExample="false" enableUpdateByExample="false"  
+            enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table> 
+
+  </context>
+</generatorConfiguration>
