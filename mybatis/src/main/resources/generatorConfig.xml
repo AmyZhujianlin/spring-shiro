@@ -11,9 +11,9 @@
         </commentGenerator> 
     <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.10.180:3306/hhmao" 
     userId="myte" password="123456" />
-    <javaModelGenerator targetPackage="com.hhmao.test.entity" targetProject="mybatis\src\main\java" />  
-    <sqlMapGenerator targetPackage="com.hhmao.test.mapper" targetProject="mybatis\src\main\java" ></sqlMapGenerator>  
-    <javaClientGenerator targetPackage="com.hhmao.test.dao" targetProject="mybatis\src\main\java" type="XMLMAPPER" />  
+    <javaModelGenerator targetPackage="com.hhmao.core.market.schema.tradecircle" targetProject="mybatis\src\main\java" />  
+    <sqlMapGenerator targetPackage="com.hhmao.core.server.market.dao" targetProject="mybatis\src\main\java" ></sqlMapGenerator>  
+    <javaClientGenerator targetPackage="com.hhmao.core.server.market.dao" targetProject="mybatis\src\main\java" type="XMLMAPPER" />  
     <!-- 
     <table schema="" tableName="entrustpurchase" domainObjectName="Entrustpurchase" enableCountByExample="true" enableUpdateByExample="true"  
             enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table>
@@ -29,9 +29,9 @@
             enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table>
     <table schema="" tableName="chat_logger" domainObjectName="ChatLogger" enableCountByExample="true" enableUpdateByExample="true"  
             enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"></table> 
-     -->
-    <table schema="" tableName="tradecircle_commonts" domainObjectName="TradecircleCommonts" enableCountByExample="false" enableUpdateByExample="false"  
+    <table schema="" tableName="tradecircle_comments" domainObjectName="TradecircleComments" enableCountByExample="false" enableUpdateByExample="false"  
             enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+     -->
     <table schema="" tableName="tradecircle_praise" domainObjectName="TradecirclePraise" enableCountByExample="false" enableUpdateByExample="false"  
             enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table> 
 

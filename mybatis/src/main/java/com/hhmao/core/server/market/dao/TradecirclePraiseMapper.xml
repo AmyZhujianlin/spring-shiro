@@ -1,44 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.hhmao.test.dao.TradecircleCommontsMapper" >
-  <resultMap id="BaseResultMap" type="com.hhmao.test.entity.TradecircleCommonts" >
+<mapper namespace="com.hhmao.core.server.market.dao.TradecirclePraiseMapper" >
+  <resultMap id="BaseResultMap" type="com.hhmao.core.market.schema.tradecircle.TradecirclePraise" >
     <id column="id" property="id" jdbcType="VARCHAR" />
     <result column="date_created" property="dateCreated" jdbcType="TIMESTAMP" />
     <result column="last_updated" property="lastUpdated" jdbcType="TIMESTAMP" />
     <result column="disabled" property="disabled" jdbcType="INTEGER" />
     <result column="tradecircle_id" property="tradecircleId" jdbcType="VARCHAR" />
-    <result column="reply_name" property="replyName" jdbcType="VARCHAR" />
-    <result column="commont_name" property="commontName" jdbcType="VARCHAR" />
-    <result column="content" property="content" jdbcType="VARCHAR" />
+    <result column="member_id" property="memberId" jdbcType="VARCHAR" />
+    <result column="praise_name" property="praiseName" jdbcType="VARCHAR" />
     <result column="is_synchronized" property="isSynchronized" jdbcType="INTEGER" />
-    <result column="shop_name" property="shopName" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
-    id, date_created, last_updated, disabled, tradecircle_id, reply_name, commont_name, 
-    content, is_synchronized, shop_name
+    id, date_created, last_updated, disabled, tradecircle_id, member_id, praise_name, 
+    is_synchronized
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
     select 
     <include refid="Base_Column_List" />
-    from tradecircle_commonts
+    from tradecircle_praise
     where id = #{id,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
-    delete from tradecircle_commonts
+    delete from tradecircle_praise
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="com.hhmao.test.entity.TradecircleCommonts" >
-    insert into tradecircle_commonts (id, date_created, last_updated, 
-      disabled, tradecircle_id, reply_name, 
-      commont_name, content, is_synchronized, 
-      shop_name)
+  <insert id="insert" parameterType="com.hhmao.core.market.schema.tradecircle.TradecirclePraise" >
+    insert into tradecircle_praise (id, date_created, last_updated, 
+      disabled, tradecircle_id, member_id, 
+      praise_name, is_synchronized)
     values (#{id,jdbcType=VARCHAR}, #{dateCreated,jdbcType=TIMESTAMP}, #{lastUpdated,jdbcType=TIMESTAMP}, 
-      #{disabled,jdbcType=INTEGER}, #{tradecircleId,jdbcType=VARCHAR}, #{replyName,jdbcType=VARCHAR}, 
-      #{commontName,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{isSynchronized,jdbcType=INTEGER}, 
-      #{shopName,jdbcType=VARCHAR})
+      #{disabled,jdbcType=INTEGER}, #{tradecircleId,jdbcType=VARCHAR}, #{memberId,jdbcType=VARCHAR}, 
+      #{praiseName,jdbcType=VARCHAR}, #{isSynchronized,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.hhmao.test.entity.TradecircleCommonts" >
-    insert into tradecircle_commonts
+  <insert id="insertSelective" parameterType="com.hhmao.core.market.schema.tradecircle.TradecirclePraise" >
+    insert into tradecircle_praise
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
         id,
@@ -55,20 +51,14 @@
       <if test="tradecircleId != null" >
         tradecircle_id,
       </if>
-      <if test="replyName != null" >
-        reply_name,
+      <if test="memberId != null" >
+        member_id,
       </if>
-      <if test="commontName != null" >
-        commont_name,
-      </if>
-      <if test="content != null" >
-        content,
+      <if test="praiseName != null" >
+        praise_name,
       </if>
       <if test="isSynchronized != null" >
         is_synchronized,
-      </if>
-      <if test="shopName != null" >
-        shop_name,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
@@ -87,25 +77,19 @@
       <if test="tradecircleId != null" >
         #{tradecircleId,jdbcType=VARCHAR},
       </if>
-      <if test="replyName != null" >
-        #{replyName,jdbcType=VARCHAR},
+      <if test="memberId != null" >
+        #{memberId,jdbcType=VARCHAR},
       </if>
-      <if test="commontName != null" >
-        #{commontName,jdbcType=VARCHAR},
-      </if>
-      <if test="content != null" >
-        #{content,jdbcType=VARCHAR},
+      <if test="praiseName != null" >
+        #{praiseName,jdbcType=VARCHAR},
       </if>
       <if test="isSynchronized != null" >
         #{isSynchronized,jdbcType=INTEGER},
       </if>
-      <if test="shopName != null" >
-        #{shopName,jdbcType=VARCHAR},
-      </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.hhmao.test.entity.TradecircleCommonts" >
-    update tradecircle_commonts
+  <update id="updateByPrimaryKeySelective" parameterType="com.hhmao.core.market.schema.tradecircle.TradecirclePraise" >
+    update tradecircle_praise
     <set >
       <if test="dateCreated != null" >
         date_created = #{dateCreated,jdbcType=TIMESTAMP},
@@ -119,35 +103,27 @@
       <if test="tradecircleId != null" >
         tradecircle_id = #{tradecircleId,jdbcType=VARCHAR},
       </if>
-      <if test="replyName != null" >
-        reply_name = #{replyName,jdbcType=VARCHAR},
+      <if test="memberId != null" >
+        member_id = #{memberId,jdbcType=VARCHAR},
       </if>
-      <if test="commontName != null" >
-        commont_name = #{commontName,jdbcType=VARCHAR},
-      </if>
-      <if test="content != null" >
-        content = #{content,jdbcType=VARCHAR},
+      <if test="praiseName != null" >
+        praise_name = #{praiseName,jdbcType=VARCHAR},
       </if>
       <if test="isSynchronized != null" >
         is_synchronized = #{isSynchronized,jdbcType=INTEGER},
       </if>
-      <if test="shopName != null" >
-        shop_name = #{shopName,jdbcType=VARCHAR},
-      </if>
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.hhmao.test.entity.TradecircleCommonts" >
-    update tradecircle_commonts
+  <update id="updateByPrimaryKey" parameterType="com.hhmao.core.market.schema.tradecircle.TradecirclePraise" >
+    update tradecircle_praise
     set date_created = #{dateCreated,jdbcType=TIMESTAMP},
       last_updated = #{lastUpdated,jdbcType=TIMESTAMP},
       disabled = #{disabled,jdbcType=INTEGER},
       tradecircle_id = #{tradecircleId,jdbcType=VARCHAR},
-      reply_name = #{replyName,jdbcType=VARCHAR},
-      commont_name = #{commontName,jdbcType=VARCHAR},
-      content = #{content,jdbcType=VARCHAR},
-      is_synchronized = #{isSynchronized,jdbcType=INTEGER},
-      shop_name = #{shopName,jdbcType=VARCHAR}
+      member_id = #{memberId,jdbcType=VARCHAR},
+      praise_name = #{praiseName,jdbcType=VARCHAR},
+      is_synchronized = #{isSynchronized,jdbcType=INTEGER}
     where id = #{id,jdbcType=VARCHAR}
   </update>
 </mapper>

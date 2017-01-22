@@ -1,6 +1,6 @@
-package com.hhmao.test.dao;
+package com.hhmao.core.server.market.dao;
 
-import com.hhmao.test.entity.TradecirclePraise;
+import com.hhmao.core.market.schema.tradecircle.TradecirclePraise;
 
 public interface TradecirclePraiseMapper {
     int deleteByPrimaryKey(String id);

@@ -1,4 +1,4 @@
-package com.hhmao.test.entity;
+package com.hhmao.core.market.schema.tradecircle;
 
 import java.util.Date;
 
@@ -7,11 +7,17 @@ public class TradecirclePraise {
 
     private Date dateCreated;
 
+    private Date lastUpdated;
+
+    private Integer disabled;
+
     private String tradecircleId;
 
     private String memberId;
 
     private String praiseName;
+
+    private Integer isSynchronized;
 
     public String getId() {
         return id;
@@ -27,6 +33,22 @@ public class TradecirclePraise {
 
     public void setDateCreated(Date dateCreated) {
         this.dateCreated = dateCreated;
+    }
+
+    public Date getLastUpdated() {
+        return lastUpdated;
+    }
+
+    public void setLastUpdated(Date lastUpdated) {
+        this.lastUpdated = lastUpdated;
+    }
+
+    public Integer getDisabled() {
+        return disabled;
+    }
+
+    public void setDisabled(Integer disabled) {
+        this.disabled = disabled;
     }
 
     public String getTradecircleId() {
@@ -51,5 +73,13 @@ public class TradecirclePraise {
 
     public void setPraiseName(String praiseName) {
         this.praiseName = praiseName;
+    }
+
+    public Integer getIsSynchronized() {
+        return isSynchronized;
+    }
+
+    public void setIsSynchronized(Integer isSynchronized) {
+        this.isSynchronized = isSynchronized;
     }
 }
