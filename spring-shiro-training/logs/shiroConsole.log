@@ -1,0 +1,280 @@
+2017-02-23 11:55:07.091 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-02-23 11:55:07.669 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-02-23 11:55:07.753 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+2017-02-23 11:55:07.961 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [sqlMapConfig.xml]'
+2017-02-23 11:55:07.962 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+2017-02-23 11:55:08.055 [main] DEBUG org.apache.shiro.spring.LifecycleBeanPostProcessor - Initializing bean [shiroDbRealm]...
+2017-02-23 11:55:08.055 [main] DEBUG org.apache.shiro.realm.AuthorizingRealm - No authorizationCache instance set.  Checking for a cacheManager...
+2017-02-23 11:55:08.055 [main] INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2017-02-23 11:55:08.070 [main] DEBUG org.apache.shiro.spring.LifecycleBeanPostProcessor - Initializing bean [shiroEhcacheManager]...
+2017-02-23 11:55:08.070 [main] DEBUG org.apache.shiro.cache.ehcache.EhCacheManager - cacheManager property not set.  Constructing CacheManager instance... 
+2017-02-23 11:55:08.078 [main] DEBUG org.apache.shiro.io.ResourceUtils - Opening resource from class path [ehcache-shiro.xml]
+2017-02-23 11:55:08.085 [main] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2017-02-23 11:55:08.104 [main] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2017-02-23 11:55:08.113 [main] DEBUG net.sf.ehcache.CacheManager - No disk store path defined. Skipping disk store path conflict test.
+2017-02-23 11:55:08.113 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2017-02-23 11:55:08.166 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2017-02-23 11:55:08.167 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2017-02-23 11:55:08.167 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2017-02-23 11:55:08.169 [main] DEBUG org.apache.shiro.cache.ehcache.EhCacheManager - implicit cacheManager created successfully.
+2017-02-23 11:55:08.172 [main] DEBUG org.apache.shiro.realm.AuthorizingRealm - No authorizationCache instance set.  Checking for a cacheManager...
+2017-02-23 11:55:08.172 [main] DEBUG org.apache.shiro.realm.AuthorizingRealm - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@1aa6e3c0] has been configured.  Building authorization cache named [com.wangzhixuan.shiro.ShiroDbRealm.authorizationCache]
+2017-02-23 11:55:08.172 [main] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'com.wangzhixuan.shiro.ShiroDbRealm.authorizationCache' does not yet exist.  Creating now.
+2017-02-23 11:55:08.203 [main] DEBUG net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.NotifyingMemoryStore for com.wangzhixuan.shiro.ShiroDbRealm.authorizationCache
+2017-02-23 11:55:08.207 [main] DEBUG net.sf.ehcache.Cache - Initialised cache: com.wangzhixuan.shiro.ShiroDbRealm.authorizationCache
+2017-02-23 11:55:08.207 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'com.wangzhixuan.shiro.ShiroDbRealm.authorizationCache'.
+2017-02-23 11:55:08.208 [main] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [com.wangzhixuan.shiro.ShiroDbRealm.authorizationCache]
+2017-02-23 11:55:08.386 [main] DEBUG org.apache.shiro.spring.web.ShiroFilterFactoryBean - Creating Shiro Filter instance.
+2017-02-23 11:55:08.399 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Creating chain [/commons/**] from String definition [anon]
+2017-02-23 11:55:08.399 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Attempting to apply path [/commons/**] to filter [anon] with config [null]
+2017-02-23 11:55:08.400 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Creating chain [/static/**] from String definition [anon]
+2017-02-23 11:55:08.400 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Attempting to apply path [/static/**] to filter [anon] with config [null]
+2017-02-23 11:55:08.400 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Creating chain [/login] from String definition [anon]
+2017-02-23 11:55:08.400 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Attempting to apply path [/login] to filter [anon] with config [null]
+2017-02-23 11:55:08.400 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Creating chain [/**] from String definition [authc]
+2017-02-23 11:55:08.400 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Attempting to apply path [/**] to filter [authc] with config [null]
+2017-02-23 11:55:22.605 [2061515999@qtp-892529689-2] DEBUG org.apache.shiro.web.servlet.SimpleCookie - Found 'rememberMe' cookie value [WlpKwh7HU/FuGGVc/jhbO4iEf7+x1NPemQpegS81R2X3uj6ylyebdUimMu00CvYNJaOxNS4lVfpWmV/xpOZm3w+QARm/r86MEv6QfMekmUq7k4/IPbD5gvhwkfVmVi92KYutRIEi7gexGz9fjLVL7JWN0JGdvH/DnySGwNGZ91SedgHfskLX3Gz38o5QDjKiwk1Q0o+f5f+htutwokgSoG/SSoTAvyckR8kq+d5C2Pg8Z7MVgTwDQfzCHWBt4P9b+AXXEQqBFxUIv/7ZrzfEvfEWtW91bpafOM2hrpBSpNa4TEmvWSfryyZgdu49QtCtxp+IMVZSBRWXE8JT7BCm7EtWBlYy0kVRhM7Hfk2cEqigvdeufTQ7Id2RNp/SejQtVzbnWuaX5DZHmKT0sHYJ2ACRXZVa52JzYFw8vn7fN4M9gYCxztFpRpA1/Cj0TII58zvDBx1hHg/mmZsNvYmnRiZTrGYL/8We8gSep6ATY9vOEBN4owoEn/A4+S4eN3aZA1DI4nqff8v/uXh8qmmlTK/bKLkUoFuhj1+BVXMa04uPjjtLijHsTQgQ6M7bJLfGIfeceM6lKJIqWmurS8/1FWwM3CwTm0PvSHBCmYX63uVf7KD3RQH0JG2MC4ntNSyUuZID3iWvmZ4eyz41XwZbQY5zxEEmgIetpOIvYCFPCoC/Z3wcLbehFOK/WRkLfrG9OggNRZmvV1Yo4lNbjU6KUFofoVZ/0AJBpBQNd5/4g9ySJzyVoBu0BixpUs5iHZK0KGSzcYdc8R3b7zsVGm4fcCJIVjOQaUHIgnDcsOZoZLhF29fuelm924lNhcGh5cnA+nrJDRF9TaBMN1yr8ZjNHv8K88jL8h/NhhK7/dugJe5W9BIOV4shAb16Y2vWEiNEJmhSoFO/NzvZnaHkRpYkTZfGFsRB6h51aHose9OMBAx9wCrOx5o+vzBPCvBwFnfs]
+2017-02-23 11:55:22.880 [2061515999@qtp-892529689-2] DEBUG org.apache.shiro.mgt.DefaultSecurityManager - Found remembered PrincipalCollection.  Adding to the context to be used for subject construction by the SubjectFactory.
+2017-02-23 11:55:22.929 [2061515999@qtp-892529689-2] INFO  com.wangzhixuan.aop.SysLogAop - [类名]:com.wangzhixuan.controller.LoginController,[方法]:login,[参数]:null
+2017-02-23 11:55:22.929 [2061515999@qtp-892529689-2] INFO  com.wangzhixuan.aop.SysLogAop - SysLog{id=null, loginName='admin', roleName='admin', optContent='[类名]:com.wangzhixuan.controller.LoginController,[方法]:login,[参数]:null', clientIp='0:0:0:0:0:0:0:1', createTime=null}
+2017-02-23 11:55:22.954 [2061515999@qtp-892529689-2] DEBUG com.wangzhixuan.datasource.DynamicDataSource - currenty datasource :
+2017-02-23 11:55:22.966 [2061515999@qtp-892529689-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2017-02-23 11:55:22.971 [2061515999@qtp-892529689-2] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@675322ff]
+2017-02-23 11:55:22.977 [2061515999@qtp-892529689-2] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@f446c21] will be managed by Spring
+2017-02-23 11:55:22.980 [2061515999@qtp-892529689-2] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - ==>  Preparing: insert into syslog (login_name, role_name, opt_content, client_ip, create_time) values (?, ?, ?, ?, now()) 
+2017-02-23 11:55:23.046 [2061515999@qtp-892529689-2] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - ==> Parameters: admin(String), admin(String), [类名]:com.wangzhixuan.controller.LoginController,[方法]:login,[参数]:null(String), 0:0:0:0:0:0:0:1(String)
+2017-02-23 11:55:23.116 [2061515999@qtp-892529689-2] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - <==    Updates: 1
+2017-02-23 11:55:23.119 [2061515999@qtp-892529689-2] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - ==>  Preparing: SELECT LAST_INSERT_ID() 
+2017-02-23 11:55:23.132 [2061515999@qtp-892529689-2] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - ==> Parameters: 
+2017-02-23 11:55:23.184 [2061515999@qtp-892529689-2] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - <==      Total: 1
+2017-02-23 11:55:23.187 [2061515999@qtp-892529689-2] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@675322ff]
+2017-02-23 11:55:23.187 [2061515999@qtp-892529689-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@675322ff]
+2017-02-23 11:55:23.187 [2061515999@qtp-892529689-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@675322ff]
+2017-02-23 11:55:23.187 [2061515999@qtp-892529689-2] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@675322ff]
+2017-02-23 11:55:23.262 [2061515999@qtp-892529689-2] INFO  com.wangzhixuan.controller.LoginController - GET请求登录
+2017-02-23 16:01:46.895 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-02-23 16:01:47.473 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2017-02-23 16:01:47.543 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+2017-02-23 16:01:47.790 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [sqlMapConfig.xml]'
+2017-02-23 16:01:47.791 [main] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+2017-02-23 16:01:47.901 [main] DEBUG org.apache.shiro.spring.LifecycleBeanPostProcessor - Initializing bean [shiroDbRealm]...
+2017-02-23 16:01:47.901 [main] DEBUG org.apache.shiro.realm.AuthorizingRealm - No authorizationCache instance set.  Checking for a cacheManager...
+2017-02-23 16:01:47.901 [main] INFO  org.apache.shiro.realm.AuthorizingRealm - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2017-02-23 16:01:47.915 [main] DEBUG org.apache.shiro.spring.LifecycleBeanPostProcessor - Initializing bean [shiroEhcacheManager]...
+2017-02-23 16:01:47.915 [main] DEBUG org.apache.shiro.cache.ehcache.EhCacheManager - cacheManager property not set.  Constructing CacheManager instance... 
+2017-02-23 16:01:47.925 [main] DEBUG org.apache.shiro.io.ResourceUtils - Opening resource from class path [ehcache-shiro.xml]
+2017-02-23 16:01:47.932 [main] DEBUG net.sf.ehcache.config.ConfigurationFactory - Configuring ehcache from InputStream
+2017-02-23 16:01:47.955 [main] DEBUG net.sf.ehcache.util.PropertyUtil - propertiesString is null.
+2017-02-23 16:01:47.963 [main] DEBUG net.sf.ehcache.CacheManager - No disk store path defined. Skipping disk store path conflict test.
+2017-02-23 16:01:47.964 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheManagerEventListenerFactory class specified. Skipping...
+2017-02-23 16:01:48.021 [main] DEBUG net.sf.ehcache.Cache - No BootstrapCacheLoaderFactory class specified. Skipping...
+2017-02-23 16:01:48.021 [main] DEBUG net.sf.ehcache.Cache - CacheWriter factory not configured. Skipping...
+2017-02-23 16:01:48.022 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - No CacheExceptionHandlerFactory class specified. Skipping...
+2017-02-23 16:01:48.023 [main] DEBUG org.apache.shiro.cache.ehcache.EhCacheManager - implicit cacheManager created successfully.
+2017-02-23 16:01:48.025 [main] DEBUG org.apache.shiro.realm.AuthorizingRealm - No authorizationCache instance set.  Checking for a cacheManager...
+2017-02-23 16:01:48.025 [main] DEBUG org.apache.shiro.realm.AuthorizingRealm - CacheManager [org.apache.shiro.cache.ehcache.EhCacheManager@5ff2b8ca] has been configured.  Building authorization cache named [com.wangzhixuan.shiro.ShiroDbRealm.authorizationCache]
+2017-02-23 16:01:48.025 [main] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Cache with name 'com.wangzhixuan.shiro.ShiroDbRealm.authorizationCache' does not yet exist.  Creating now.
+2017-02-23 16:01:48.045 [main] DEBUG net.sf.ehcache.store.MemoryStore - Initialized net.sf.ehcache.store.NotifyingMemoryStore for com.wangzhixuan.shiro.ShiroDbRealm.authorizationCache
+2017-02-23 16:01:48.048 [main] DEBUG net.sf.ehcache.Cache - Initialised cache: com.wangzhixuan.shiro.ShiroDbRealm.authorizationCache
+2017-02-23 16:01:48.048 [main] DEBUG net.sf.ehcache.config.ConfigurationHelper - CacheDecoratorFactory not configured for defaultCache. Skipping for 'com.wangzhixuan.shiro.ShiroDbRealm.authorizationCache'.
+2017-02-23 16:01:48.048 [main] INFO  org.apache.shiro.cache.ehcache.EhCacheManager - Added EhCache named [com.wangzhixuan.shiro.ShiroDbRealm.authorizationCache]
+2017-02-23 16:01:48.233 [main] DEBUG org.apache.shiro.spring.web.ShiroFilterFactoryBean - Creating Shiro Filter instance.
+2017-02-23 16:01:48.245 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Creating chain [/commons/**] from String definition [anon]
+2017-02-23 16:01:48.245 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Attempting to apply path [/commons/**] to filter [anon] with config [null]
+2017-02-23 16:01:48.246 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Creating chain [/static/**] from String definition [anon]
+2017-02-23 16:01:48.246 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Attempting to apply path [/static/**] to filter [anon] with config [null]
+2017-02-23 16:01:48.247 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Creating chain [/login] from String definition [anon]
+2017-02-23 16:01:48.247 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Attempting to apply path [/login] to filter [anon] with config [null]
+2017-02-23 16:01:48.247 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Creating chain [/**] from String definition [authc]
+2017-02-23 16:01:48.247 [main] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager - Attempting to apply path [/**] to filter [authc] with config [null]
+2017-02-23 16:02:18.905 [1559190631@qtp-892529689-2] INFO  com.wangzhixuan.aop.SysLogAop - [类名]:com.wangzhixuan.controller.LoginController,[方法]:login,[参数]:null
+2017-02-23 16:02:18.914 [1559190631@qtp-892529689-2] INFO  com.wangzhixuan.controller.LoginController - GET请求登录
+2017-02-23 16:02:26.971 [1283941494@qtp-892529689-4] INFO  com.wangzhixuan.aop.SysLogAop - [类名]:com.wangzhixuan.controller.LoginController,[方法]:loginPost,[参数]:password=test&username=admin&
+2017-02-23 16:02:26.972 [1283941494@qtp-892529689-4] INFO  com.wangzhixuan.controller.LoginController - POST请求登录
+2017-02-23 16:02:26.977 [1283941494@qtp-892529689-4] INFO  com.wangzhixuan.shiro.ShiroDbRealm - Shiro开始登录认证
+2017-02-23 16:02:27.007 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.datasource.DynamicDataSource - currenty datasource :
+2017-02-23 16:02:27.020 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2017-02-23 16:02:27.034 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@afce25e]
+2017-02-23 16:02:27.041 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71b86465] will be managed by Spring
+2017-02-23 16:02:27.043 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.UserMapper.findUserByLoginName - ==>  Preparing: select id, loginname, name, password, sex, age, usertype, status, organization_id, createdate, phone from user where loginname = ? 
+2017-02-23 16:02:27.118 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.UserMapper.findUserByLoginName - ==> Parameters: admin(String)
+2017-02-23 16:02:27.140 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.UserMapper.findUserByLoginName - <==      Total: 1
+2017-02-23 16:02:27.141 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@afce25e]
+2017-02-23 16:02:27.142 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@afce25e]
+2017-02-23 16:02:27.142 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@afce25e]
+2017-02-23 16:02:27.142 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@afce25e]
+2017-02-23 16:02:27.144 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.datasource.DynamicDataSource - currenty datasource :
+2017-02-23 16:02:27.145 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2017-02-23 16:02:27.145 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b969fd0]
+2017-02-23 16:02:27.145 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71b86465] will be managed by Spring
+2017-02-23 16:02:27.146 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.UserRoleMapper.findRoleIdListByUserId - ==>  Preparing: select role_id AS roleId from user_role where user_id = ? 
+2017-02-23 16:02:27.147 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.UserRoleMapper.findRoleIdListByUserId - ==> Parameters: 1(Long)
+2017-02-23 16:02:27.148 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.UserRoleMapper.findRoleIdListByUserId - <==      Total: 3
+2017-02-23 16:02:27.148 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b969fd0]
+2017-02-23 16:02:27.148 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b969fd0]
+2017-02-23 16:02:27.148 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b969fd0]
+2017-02-23 16:02:27.148 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b969fd0]
+2017-02-23 16:02:27.152 [1283941494@qtp-892529689-4] DEBUG org.apache.shiro.realm.AuthenticatingRealm - Looked up AuthenticationInfo [admin] from doGetAuthenticationInfo
+2017-02-23 16:02:27.152 [1283941494@qtp-892529689-4] DEBUG org.apache.shiro.realm.AuthenticatingRealm - AuthenticationInfo caching is disabled for info [admin].  Submitted token: [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=true].
+2017-02-23 16:02:27.152 [1283941494@qtp-892529689-4] DEBUG org.apache.shiro.authc.credential.SimpleCredentialsMatcher - Performing credentials equality check for tokenCredentials of type [[C and accountCredentials of type [[C]
+2017-02-23 16:02:27.152 [1283941494@qtp-892529689-4] DEBUG org.apache.shiro.authc.credential.SimpleCredentialsMatcher - Both credentials arguments can be easily converted to byte arrays.  Performing array equals comparison
+2017-02-23 16:02:27.152 [1283941494@qtp-892529689-4] DEBUG org.apache.shiro.authc.AbstractAuthenticator - Authentication successful for token [org.apache.shiro.authc.UsernamePasswordToken - admin, rememberMe=true].  Returned account [admin]
+2017-02-23 16:02:27.152 [1283941494@qtp-892529689-4] DEBUG org.apache.shiro.subject.support.DefaultSubjectContext - No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+2017-02-23 16:02:27.152 [1283941494@qtp-892529689-4] DEBUG org.apache.shiro.mgt.DefaultSecurityManager - Context already contains a session.  Returning.
+2017-02-23 16:02:27.152 [1283941494@qtp-892529689-4] DEBUG org.apache.shiro.subject.support.DefaultSubjectContext - No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+2017-02-23 16:02:27.153 [1283941494@qtp-892529689-4] DEBUG org.apache.shiro.web.servlet.SimpleCookie - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/spring-shiro-training; Max-Age=0; Expires=Wed, 22-Feb-2017 08:02:27 GMT]
+2017-02-23 16:02:27.304 [1283941494@qtp-892529689-4] DEBUG org.apache.shiro.web.servlet.SimpleCookie - Added HttpServletResponse Cookie [rememberMe=HVexXzwqeHtCxLlFfiSthh0Chlz44PErtqFC8tTjada0WDSt75u7gVDjWxep0fQqIrBlsXhReIs8dB9Yy0105rEUFDC+bzna8+U2oPHc7pVbCDsCiBcWCrLedzZQB04q76lvTKYceIDxuh8jZLvLazu+53TCYQxu0t8s14Bxma4bjN66oP5xA89QNx0nwnTEBEq/t/G5Yk969wrtaDBFVVuZOL/eSKofHmKmsy1+LIOTeyPK4Rnqax1TP3+OEWeAbVFwtcxi2IgFfU1es5qaW03XqycQcLiwIT2ptXAo81ypt5TO8vVsm6TJCeot2A+70JJGlmofTrLJPccDfn8Pk4lYa0wIAIqjOzGeofxZxlrTEvwNL9dR+TW9HwZlxrMY30gVDGsWokDvMOFanpEWDL6qoAOyn5hkS0mF5Gtkz/WAShR4xDkc63qSrzynkTYPUsgwg5UdKq25WWb8M6IWXbqAdFOL4dIuggWcgGlfX+ZGVAwwr9XiNyTW9gyvIAfFMEsZvzUOoUQ33RKygC59+GeZlCZWn0zNeD+bog8hJ/QrhLznSaA24sebLUGIzAEpHvvn7XYzRu3Zj53nqMinTh2NS2ZqlFxlTmosm2sKDtcIoKXjCiF3X8csoisJZbAqCsYSRLW69D9jdfXvzaRU0191IxAI612slZ+gQ2FX2jjl1vKjAJd4nb93/u/5c/y06kxVfkbKVJZB4HEq4KdZSi61h5iHGteJ5MMwmkXqdbtZ/dGFvJMpm5Oj6v6oH1/sv7qREN1ZeeTojd4wr12TvkeLMJ1AhClYr7rdZmTLK/NQp7Rb/6pdTdeEfGY63DCrYINosXg3uwqefI+EUYEPkHDhfV2RqHcSMlmRC/N7H6TZZc8Oy6AsKiWlN7NqbTn1ShOZXzaFk/pa+NcApd1ifT7nq8YmnIGCet+oUYWGcjhITb++iSjSj/mjwb2Cn2OL; Path=/spring-shiro-training; Max-Age=31536000; Expires=Fri, 23-Feb-2018 08:02:27 GMT; HttpOnly]
+2017-02-23 16:02:27.356 [1283941494@qtp-892529689-4] INFO  com.wangzhixuan.aop.SysLogAop - [类名]:com.wangzhixuan.controller.LoginController,[方法]:index,[参数]:null
+2017-02-23 16:02:27.629 [1283941494@qtp-892529689-4] INFO  com.wangzhixuan.aop.SysLogAop - [类名]:com.wangzhixuan.controller.ResourceController,[方法]:tree,[参数]:
+2017-02-23 16:02:27.641 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.datasource.DynamicDataSource - currenty datasource :
+2017-02-23 16:02:27.642 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2017-02-23 16:02:27.642 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54ce9094]
+2017-02-23 16:02:27.642 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71b86465] will be managed by Spring
+2017-02-23 16:02:27.642 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.UserMapper.findUserById - ==>  Preparing: select id, loginname, name, password, sex, age, usertype, status, organization_id, createdate, phone from user where id = ? 
+2017-02-23 16:02:27.643 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.UserMapper.findUserById - ==> Parameters: 1(Long)
+2017-02-23 16:02:27.644 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.UserMapper.findUserById - <==      Total: 1
+2017-02-23 16:02:27.645 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54ce9094]
+2017-02-23 16:02:27.645 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54ce9094]
+2017-02-23 16:02:27.645 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54ce9094]
+2017-02-23 16:02:27.645 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54ce9094]
+2017-02-23 16:02:27.647 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.datasource.DynamicDataSource - currenty datasource :
+2017-02-23 16:02:27.659 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2017-02-23 16:02:27.659 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a65d4d]
+2017-02-23 16:02:27.660 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71b86465] will be managed by Spring
+2017-02-23 16:02:27.660 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.ResourceMapper.findResourceAllByTypeAndPidNull - ==>  Preparing: select distinct id, name, url, description, icon, pid, seq, status, resourcetype, createdate from resource where resourcetype = ? and pid is null order by seq 
+2017-02-23 16:02:27.664 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.ResourceMapper.findResourceAllByTypeAndPidNull - ==> Parameters: 0(Integer)
+2017-02-23 16:02:27.677 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.ResourceMapper.findResourceAllByTypeAndPidNull - <==      Total: 3
+2017-02-23 16:02:27.677 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a65d4d]
+2017-02-23 16:02:27.678 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a65d4d] from current transaction
+2017-02-23 16:02:27.678 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.ResourceMapper.findResourceAllByTypeAndPid - ==>  Preparing: select distinct id, name, url, description, icon, pid, seq, status, resourcetype, createdate from resource where resourcetype = ? and pid = ? order by seq 
+2017-02-23 16:02:27.679 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.ResourceMapper.findResourceAllByTypeAndPid - ==> Parameters: 0(Integer), 1(Long)
+2017-02-23 16:02:27.681 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.ResourceMapper.findResourceAllByTypeAndPid - <==      Total: 4
+2017-02-23 16:02:27.681 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a65d4d]
+2017-02-23 16:02:27.682 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a65d4d] from current transaction
+2017-02-23 16:02:27.682 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.ResourceMapper.findResourceAllByTypeAndPid - ==>  Preparing: select distinct id, name, url, description, icon, pid, seq, status, resourcetype, createdate from resource where resourcetype = ? and pid = ? order by seq 
+2017-02-23 16:02:27.682 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.ResourceMapper.findResourceAllByTypeAndPid - ==> Parameters: 0(Integer), 222(Long)
+2017-02-23 16:02:27.685 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.ResourceMapper.findResourceAllByTypeAndPid - <==      Total: 2
+2017-02-23 16:02:27.686 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a65d4d]
+2017-02-23 16:02:27.686 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a65d4d] from current transaction
+2017-02-23 16:02:27.687 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.ResourceMapper.findResourceAllByTypeAndPid - ==>  Preparing: select distinct id, name, url, description, icon, pid, seq, status, resourcetype, createdate from resource where resourcetype = ? and pid = ? order by seq 
+2017-02-23 16:02:27.688 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.ResourceMapper.findResourceAllByTypeAndPid - ==> Parameters: 0(Integer), 221(Long)
+2017-02-23 16:02:27.690 [1283941494@qtp-892529689-4] DEBUG com.wangzhixuan.mapper.ResourceMapper.findResourceAllByTypeAndPid - <==      Total: 0
+2017-02-23 16:02:27.690 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a65d4d]
+2017-02-23 16:02:27.691 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a65d4d]
+2017-02-23 16:02:27.691 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a65d4d]
+2017-02-23 16:02:27.691 [1283941494@qtp-892529689-4] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65a65d4d]
+2017-02-23 16:02:36.626 [561675027@qtp-892529689-5] INFO  com.wangzhixuan.aop.SysLogAop - [类名]:com.wangzhixuan.controller.RoleController,[方法]:manager,[参数]:
+2017-02-23 16:02:36.731 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.datasource.DynamicDataSource - currenty datasource :
+2017-02-23 16:02:36.733 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2017-02-23 16:02:36.733 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16fa960b]
+2017-02-23 16:02:36.733 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71b86465] will be managed by Spring
+2017-02-23 16:02:36.733 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRoleResourceListByRoleId - ==>  Preparing: SELECT e.id AS id, s.url AS url FROM role r LEFT JOIN role_resource e ON r.id = e.role_id LEFT JOIN resource s ON e.resource_id = s.id WHERE r.id = ? 
+2017-02-23 16:02:36.736 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRoleResourceListByRoleId - ==> Parameters: 1(Long)
+2017-02-23 16:02:36.750 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRoleResourceListByRoleId - <==      Total: 26
+2017-02-23 16:02:36.751 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16fa960b]
+2017-02-23 16:02:36.751 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16fa960b]
+2017-02-23 16:02:36.751 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16fa960b]
+2017-02-23 16:02:36.751 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@16fa960b]
+2017-02-23 16:02:36.756 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.datasource.DynamicDataSource - currenty datasource :
+2017-02-23 16:02:36.757 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2017-02-23 16:02:36.757 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d8f66b6]
+2017-02-23 16:02:36.757 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71b86465] will be managed by Spring
+2017-02-23 16:02:36.757 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRoleResourceListByRoleId - ==>  Preparing: SELECT e.id AS id, s.url AS url FROM role r LEFT JOIN role_resource e ON r.id = e.role_id LEFT JOIN resource s ON e.resource_id = s.id WHERE r.id = ? 
+2017-02-23 16:02:36.758 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRoleResourceListByRoleId - ==> Parameters: 2(Long)
+2017-02-23 16:02:36.759 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRoleResourceListByRoleId - <==      Total: 10
+2017-02-23 16:02:36.760 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d8f66b6]
+2017-02-23 16:02:36.760 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d8f66b6]
+2017-02-23 16:02:36.760 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d8f66b6]
+2017-02-23 16:02:36.760 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d8f66b6]
+2017-02-23 16:02:36.761 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.datasource.DynamicDataSource - currenty datasource :
+2017-02-23 16:02:36.761 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2017-02-23 16:02:36.761 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66ff3626]
+2017-02-23 16:02:36.761 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71b86465] will be managed by Spring
+2017-02-23 16:02:36.761 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRoleResourceListByRoleId - ==>  Preparing: SELECT e.id AS id, s.url AS url FROM role r LEFT JOIN role_resource e ON r.id = e.role_id LEFT JOIN resource s ON e.resource_id = s.id WHERE r.id = ? 
+2017-02-23 16:02:36.762 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRoleResourceListByRoleId - ==> Parameters: 7(Long)
+2017-02-23 16:02:36.763 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRoleResourceListByRoleId - <==      Total: 9
+2017-02-23 16:02:36.764 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66ff3626]
+2017-02-23 16:02:36.764 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66ff3626]
+2017-02-23 16:02:36.764 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66ff3626]
+2017-02-23 16:02:36.764 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66ff3626]
+2017-02-23 16:02:36.920 [561675027@qtp-892529689-5] INFO  com.wangzhixuan.aop.SysLogAop - [类名]:com.wangzhixuan.controller.RoleController,[方法]:dataGrid,[参数]:page=1&sort=id&rows=20&order=asc&
+2017-02-23 16:02:36.929 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.datasource.DynamicDataSource - currenty datasource :
+2017-02-23 16:02:36.931 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2017-02-23 16:02:36.931 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5409ba1f]
+2017-02-23 16:02:36.955 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71b86465] will be managed by Spring
+2017-02-23 16:02:36.956 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRolePageCondition - ==>  Preparing: select id, name, seq, description, status from role order by id asc limit ?, ? 
+2017-02-23 16:02:36.957 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRolePageCondition - ==> Parameters: 0(Integer), 20(Integer)
+2017-02-23 16:02:36.958 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRolePageCondition - <==      Total: 4
+2017-02-23 16:02:36.958 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5409ba1f]
+2017-02-23 16:02:36.958 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5409ba1f] from current transaction
+2017-02-23 16:02:36.958 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRolePageCount - ==>  Preparing: select count(*) count from role 
+2017-02-23 16:02:36.960 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRolePageCount - ==> Parameters: 
+2017-02-23 16:02:36.977 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.RoleMapper.findRolePageCount - <==      Total: 1
+2017-02-23 16:02:36.977 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5409ba1f]
+2017-02-23 16:02:36.977 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5409ba1f]
+2017-02-23 16:02:36.977 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5409ba1f]
+2017-02-23 16:02:36.977 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5409ba1f]
+2017-02-23 16:02:39.004 [561675027@qtp-892529689-5] INFO  com.wangzhixuan.aop.SysLogAop - [类名]:com.wangzhixuan.controller.RoleController,[方法]:addPage,[参数]:
+2017-02-23 16:02:39.004 [561675027@qtp-892529689-5] INFO  com.wangzhixuan.aop.SysLogAop - SysLog{id=null, loginName='admin', roleName='admin', optContent='[类名]:com.wangzhixuan.controller.RoleController,[方法]:addPage,[参数]:', clientIp='null', createTime=null}
+2017-02-23 16:02:39.004 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.datasource.DynamicDataSource - currenty datasource :
+2017-02-23 16:02:39.005 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2017-02-23 16:02:39.006 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@611037fc]
+2017-02-23 16:02:39.006 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71b86465] will be managed by Spring
+2017-02-23 16:02:39.006 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - ==>  Preparing: insert into syslog (login_name, role_name, opt_content, client_ip, create_time) values (?, ?, ?, ?, now()) 
+2017-02-23 16:02:39.008 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - ==> Parameters: admin(String), admin(String), [类名]:com.wangzhixuan.controller.RoleController,[方法]:addPage,[参数]:(String), null
+2017-02-23 16:02:39.015 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - <==    Updates: 1
+2017-02-23 16:02:39.016 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - ==>  Preparing: SELECT LAST_INSERT_ID() 
+2017-02-23 16:02:39.016 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - ==> Parameters: 
+2017-02-23 16:02:39.017 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - <==      Total: 1
+2017-02-23 16:02:39.018 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@611037fc]
+2017-02-23 16:02:39.019 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@611037fc]
+2017-02-23 16:02:39.019 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@611037fc]
+2017-02-23 16:02:39.019 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@611037fc]
+2017-02-23 16:03:07.683 [561675027@qtp-892529689-5] INFO  com.wangzhixuan.aop.SysLogAop - [类名]:com.wangzhixuan.controller.RoleController,[方法]:addPage,[参数]:
+2017-02-23 16:03:07.683 [561675027@qtp-892529689-5] INFO  com.wangzhixuan.aop.SysLogAop - SysLog{id=null, loginName='admin', roleName='admin', optContent='[类名]:com.wangzhixuan.controller.RoleController,[方法]:addPage,[参数]:', clientIp='null', createTime=null}
+2017-02-23 16:03:07.683 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.datasource.DynamicDataSource - currenty datasource :
+2017-02-23 16:03:07.684 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2017-02-23 16:03:07.684 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7518a4]
+2017-02-23 16:03:07.684 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71b86465] will be managed by Spring
+2017-02-23 16:03:07.684 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - ==>  Preparing: insert into syslog (login_name, role_name, opt_content, client_ip, create_time) values (?, ?, ?, ?, now()) 
+2017-02-23 16:03:07.684 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - ==> Parameters: admin(String), admin(String), [类名]:com.wangzhixuan.controller.RoleController,[方法]:addPage,[参数]:(String), null
+2017-02-23 16:03:07.685 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - <==    Updates: 1
+2017-02-23 16:03:07.686 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - ==>  Preparing: SELECT LAST_INSERT_ID() 
+2017-02-23 16:03:07.686 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - ==> Parameters: 
+2017-02-23 16:03:07.688 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - <==      Total: 1
+2017-02-23 16:03:07.688 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7518a4]
+2017-02-23 16:03:07.689 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7518a4]
+2017-02-23 16:03:07.689 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7518a4]
+2017-02-23 16:03:07.689 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7518a4]
+2017-02-23 16:03:13.824 [561675027@qtp-892529689-5] INFO  com.wangzhixuan.aop.SysLogAop - [类名]:com.wangzhixuan.controller.RoleController,[方法]:addPage,[参数]:
+2017-02-23 16:03:13.825 [561675027@qtp-892529689-5] INFO  com.wangzhixuan.aop.SysLogAop - SysLog{id=null, loginName='admin', roleName='admin', optContent='[类名]:com.wangzhixuan.controller.RoleController,[方法]:addPage,[参数]:', clientIp='null', createTime=null}
+2017-02-23 16:03:13.825 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.datasource.DynamicDataSource - currenty datasource :
+2017-02-23 16:03:13.825 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2017-02-23 16:03:13.825 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e8c2594]
+2017-02-23 16:03:13.826 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71b86465] will be managed by Spring
+2017-02-23 16:03:13.826 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - ==>  Preparing: insert into syslog (login_name, role_name, opt_content, client_ip, create_time) values (?, ?, ?, ?, now()) 
+2017-02-23 16:03:13.826 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - ==> Parameters: admin(String), admin(String), [类名]:com.wangzhixuan.controller.RoleController,[方法]:addPage,[参数]:(String), null
+2017-02-23 16:03:13.827 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - <==    Updates: 1
+2017-02-23 16:03:13.827 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - ==>  Preparing: SELECT LAST_INSERT_ID() 
+2017-02-23 16:03:13.827 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - ==> Parameters: 
+2017-02-23 16:03:13.828 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - <==      Total: 1
+2017-02-23 16:03:13.828 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e8c2594]
+2017-02-23 16:03:13.828 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e8c2594]
+2017-02-23 16:03:13.828 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e8c2594]
+2017-02-23 16:03:13.828 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e8c2594]
+2017-02-23 16:03:21.744 [561675027@qtp-892529689-5] INFO  com.wangzhixuan.aop.SysLogAop - [类名]:com.wangzhixuan.controller.RoleController,[方法]:addPage,[参数]:
+2017-02-23 16:03:21.745 [561675027@qtp-892529689-5] INFO  com.wangzhixuan.aop.SysLogAop - SysLog{id=null, loginName='admin', roleName='admin', optContent='[类名]:com.wangzhixuan.controller.RoleController,[方法]:addPage,[参数]:', clientIp='null', createTime=null}
+2017-02-23 16:03:21.745 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.datasource.DynamicDataSource - currenty datasource :
+2017-02-23 16:03:21.746 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2017-02-23 16:03:21.746 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23a9a4bb]
+2017-02-23 16:03:21.746 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@71b86465] will be managed by Spring
+2017-02-23 16:03:21.746 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - ==>  Preparing: insert into syslog (login_name, role_name, opt_content, client_ip, create_time) values (?, ?, ?, ?, now()) 
+2017-02-23 16:03:21.746 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - ==> Parameters: admin(String), admin(String), [类名]:com.wangzhixuan.controller.RoleController,[方法]:addPage,[参数]:(String), null
+2017-02-23 16:03:21.747 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert - <==    Updates: 1
+2017-02-23 16:03:21.747 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - ==>  Preparing: SELECT LAST_INSERT_ID() 
+2017-02-23 16:03:21.747 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - ==> Parameters: 
+2017-02-23 16:03:21.749 [561675027@qtp-892529689-5] DEBUG com.wangzhixuan.mapper.SysLogMapper.insert!selectKey - <==      Total: 1
+2017-02-23 16:03:21.749 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23a9a4bb]
+2017-02-23 16:03:21.749 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23a9a4bb]
+2017-02-23 16:03:21.749 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23a9a4bb]
+2017-02-23 16:03:21.749 [561675027@qtp-892529689-5] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23a9a4bb]
