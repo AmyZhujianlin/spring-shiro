@@ -19,7 +19,7 @@
         <logback.version>1.0.13</logback.version>
         <spring.version>5.2.9.RELEASE</spring.version>
         <shiro.version>[1.4.2,)</shiro.version>
-        <jackson.version>2.11.2</jackson.version>
+        <jackson.version>2.12.7.1</jackson.version>
     </properties>
 
     <dependencies>
